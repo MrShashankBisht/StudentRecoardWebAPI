@@ -14,7 +14,9 @@ student = require('./models/students');
 
 
 // creating connection from our app to mongodb databse 
-mongoose.connect("mongodb://127.0.0.1/CoachingApp",{ useNewUrlParser : true });
+mongoose.connect("mongodb+srv://root:<password>@lakshmibisht-bo8fb.mongodb.net/test?retryWrites=true&w=majority", {
+    useNewUrlParser: true
+});
 
 // get connection variable 
 var db = mongoose.connection;
